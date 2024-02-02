@@ -17,7 +17,7 @@ Llama 2: Follow the instructions in the `lit-gpt` repository [here](https://gith
 
 ### Supervised experiments
 
-First, precompute model embeddings with `precompute_logits.py`. Embeddings from different layers can be selected with the `return_after_layer_n` flag. We include our Wikipedia dataset (new Wikipedia articles after the LLaMA training cutoff) under `jsons/`.
+First, precompute model embeddings with `precompute_logits.py`. Embeddings from different layers can be selected with the `return_after_layer_n` flag. We include our Wikipedia dataset (new Wikipedia articles after the LLaMA training cutoff) under `data/`.
 
 Next, generate a dataset filter for a specific entropy band using `create_dataset_filter.py` (or `create_dataset_filter_no_gap.py` for a gapless filter).
 
