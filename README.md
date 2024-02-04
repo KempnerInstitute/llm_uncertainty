@@ -10,9 +10,9 @@ Code for the preprint "Distinguishing the Knowable from the Unknowable with Lang
 
 Our scripts support (with some gaps) three models: LLaMA, Pythia, and Llama 2.
 
-LLaMA: Follow the instructions in the original `lit-llama` repository [here](https://github.com/Lightning-AI/lit-llama/blob/main/howto/download_weights.md).
-Pythia: These should download automatically from Huggingface upon first use
-Llama 2: Follow the instructions in the `lit-gpt` repository [here](https://github.com/Lightning-AI/lit-gpt/blob/main/tutorials/download_llama_2.md).
+* LLaMA: Follow the instructions in the original `lit-llama` repository [here](https://github.com/Lightning-AI/lit-llama/blob/main/howto/download_weights.md).
+* Pythia: These should download automatically from Huggingface upon first use
+* Llama 2: Follow the instructions in the `lit-gpt` repository [here](https://github.com/Lightning-AI/lit-gpt/blob/main/tutorials/download_llama_2.md).
 
 
 ### Supervised experiments
