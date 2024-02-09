@@ -26,3 +26,24 @@ Finally, train probes using `train_head.py.`
 ### Unsupervised experiments
 
 ICLT is implemented in `repetition.py` and `generate_from_repetition.py`.
+
+The precomputed model embeddings and the dataset filters are created same as above (using `precompute_logits.py` and `create_dataset_filter.py`). You can use `repetition.py` to run the repetiton experiment with sample script as below: 
+
+```
+python repetition.py   /path/to/data/set/filter/folder/ \
+    0 # indicate filter shard number  \
+    /path/to/prompt.json \
+    llama # specify model \
+    7B # specify small model size \
+    --experiment_name default # specify the name of experiment
+```
+The repetition results will be saved under ```/path/to/data/set/filter/folder/experiment_name/```. To process the results for classificaiton task, run `generate_from_repetition.py`:
+
+```
+python generate_from_repetition.py  \
+    /path/to/data/set/filter/folder/experiment_name \
+    llama # specify model \
+    7B # specify small model size 
+```
+
+
